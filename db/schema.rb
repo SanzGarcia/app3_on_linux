@@ -61,20 +61,6 @@ ActiveRecord::Schema.define(:version => 20121030024406) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "as", :force => true do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "email"
-    t.string   "phone"
-    t.string   "utm_source"
-    t.string   "utm_medium"
-    t.string   "utm_campaign"
-    t.string   "short_name"
-    t.string   "uri"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
-  end
-
   create_table "bulletins", :force => true do |t|
     t.string   "body"
     t.string   "kind"
@@ -126,12 +112,6 @@ ActiveRecord::Schema.define(:version => 20121030024406) do
     t.string   "filter_name"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
-  end
-
-  create_table "gannes", :force => true do |t|
-    t.string   "secrete"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
   end
 
   create_table "partners", :force => true do |t|
