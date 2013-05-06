@@ -13,6 +13,7 @@ class AccountsController < ApplicationController
   # GET /accounts/1
   # GET /accounts/1.json
   def show
+    # fix login bug that redirects to accounts/1
     @account = Account.find(params[:id])    
 
     # if current_user && current_user.email.present? && current_user.email.ends_with?('_admin@leadplace.com')
@@ -37,7 +38,7 @@ class AccountsController < ApplicationController
 
     if !@buying && current_user
       render :show and return
-    else
+     else
       redirect_to admin_root_path
     end
 
@@ -72,7 +73,7 @@ class AccountsController < ApplicationController
   # POST /accounts.json
   def create
     @account = Account.new(params[:account])
-
+  
     respond_to do |format|
       if @account.save
         format.html { redirect_to @account, notice: 'Account was successfully created.' }

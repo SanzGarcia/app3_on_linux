@@ -119,14 +119,14 @@ Rightpeopleforthejob::Application.routes.draw do
   # root :to => 'welcome#index'
   # root :to => "static_pages#index"
 
-  authenticated :user do
+   authenticated :user do
     # root :to => 'static_pages#private_home'
     # root :to => 'agents#index'
     # root :to => 'purchase_preferences#show'
     # root :to => 'accounts#show'
-    root :to => 'static_pages#index'
+   root :to => 'static_pages#index'
   end
-  root :to => 'static_pages#index'
+   root :to => 'static_pages#index'
 
   # See how all your routes lay out with "rake routes"
 
