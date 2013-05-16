@@ -149,6 +149,12 @@ class StaticPagesController < ApplicationController
   def home_a
   end
 
+  def step_1
+  end  
+
+  def step_2
+  end
+
   # def run_restart
   # end
 

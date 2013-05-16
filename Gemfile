@@ -25,11 +25,14 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   # gem 'bootstrap-sass', '~> 2.0.0'
   gem 'uglifier', '>= 1.0.3'
+  # QQDD added below two gems to solve problem "can't load file --less" 
+  gem 'therubyracer', '~> 0.10.2'
+  gem 'less-rails'
+  # QQDD
 end
 
 # gem 'twitter-bootstrap-rails'  # leave at top level -> https://github.com/seyhunak/twitter-bootstrap-rails/issues/123
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git' # get later version
-
 
 gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
 gem 'jquery-ui-rails'

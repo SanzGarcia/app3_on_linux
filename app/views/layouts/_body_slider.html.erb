@@ -28,6 +28,11 @@
             <li><%= link_to "Call Us (917-720-4242)", '#'%> </li>
           </ul>
         </li>
+
+        <!--QQDD  add a tag, Steps-->
+        <li><%= link_to "Steps", '/step_1'%></li>
+        <!--QQDD -->
+        
       </ul>
     </div>
   </div>
@@ -62,8 +67,9 @@
           <div class="span4 offset1">
 
             <!-- Top -->
-
-						<% @decimal_price = (DiscountCode.find_by_code "REGULAR_PRICE").price -%>
+            <!-- QQDD replace (DiscountCode.find_by_code "REGULAR_PRICE").price as 555555-->
+						<% @decimal_price = 5555555 %>
+            <!-- QQDD-->
 						<span style='color:green; font-size:3.0em; text-align:right;'>$<%= number_with_precision @decimal_price, :precision => 2 %></span>
           </div>
         </div>
